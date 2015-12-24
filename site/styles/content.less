@@ -109,3 +109,73 @@ section#form_wrap form div.controls button:hover {
 	background-color: @color_ac_orange;
 	color: @color_ac_text;
 }
+
+section#features {
+	display: block;
+	text-align: center;
+	padding: @vertical_spacing calc(~'(100% - 1200px) / 2');
+}
+
+section#features h2 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 900px;
+	font-weight: 700;
+}
+
+section#features ul {
+	margin: 0px;
+	padding: 0px;
+	padding-top: @vertical_spacing;
+	list-style-type: none;
+}
+
+section#features ul li {
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 150px;
+	width: 20%;
+	position: relative;
+}
+
+section#features ul li:before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	margin-left: -75px;
+
+	background-image: url(../images/icons-sprite);
+	background-repeat: no-repeat;
+	background-position: -600px 0px ;
+	background-size: 750px 150px;
+
+	width: 150px;
+	height: 150px;
+}
+
+section#features ul li:first-of-type:before {
+	background-position: 150px 0px;
+}
+
+section#features ul li:nth-of-type(4):before {
+	background-position: -450px 0px;
+}
+
+section#features ul li:nth-of-type(3):before {
+	background-position: -300px 0px;
+}
+
+section#features ul li:nth-of-type(2):before {
+	background-position:  0px 0px;
+}
+
+section#features ul li:nth-of-type(1):before {
+	background-position: -150px 0px;
+}
+
+section#features ul li h4 {
+	color: darken(@color_text,10%);
+	padding-left: 10px;
+	padding-right: 10px;
+}
