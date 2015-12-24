@@ -25,12 +25,24 @@
 					<img src="_BASEURL.'/site/images/phone-circle.svg'"  alt="phone" cms:eval="src"/>
 				</a>
 
-				<cms:module
-					name="gallery"
-					action="show_image_list"
-					group="header_slider"
-					template="parts/slider_images.xml"
-					/>
+				<cms:desktop>
+					<cms:module
+						name="gallery"
+						action="show_image_list"
+						group="header_slider"
+						template="parts/slider_images.xml"
+						/>
+				</cms:desktop>
+
+				<cms:mobile>
+					<cms:module
+						name="gallery"
+						action="show_image_list"
+						group="mobile_header_slider"
+						template="parts/slider_images.xml"
+						/>
+				</cms:mobile>
+
 			</header>
 
 			<section id="form_wrap">
