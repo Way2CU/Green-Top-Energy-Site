@@ -55,7 +55,20 @@
 						<param name="title" value=""/>
 					</cms:module>	
 				</ul>
-			</section>	
+			</section>
+
+			<footer>
+				<div id="top">
+					<img src="_BASEURL.'/site/images/logo.svg'"  alt="logo" cms:eval="src"/>
+					<h2><cms:text constant="title_footer"/></h2>
+				</div>
+
+				<cms:template file="stock/copyright.xml">
+					<param name="holder" value="copyright_holder"/>
+					<param name="text" value="copyright_text"/>
+					<param name="light" value=""/>
+				</cms:template>
+			</footer>	
 		</body>
 	</html>
 </document>
