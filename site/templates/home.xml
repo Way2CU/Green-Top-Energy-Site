@@ -71,7 +71,7 @@
 
 			<footer>
 				<div id="top">
-					<img src="_BASEURL.'/site/images/logo.svg'"  alt="logo" cms:eval="src"/>
+					<img src="_BASEURL.'/site/images/logo-white.svg'"  alt="logo" cms:eval="src"/>
 					<h2><cms:text constant="title_footer"/></h2>
 				</div>
 
