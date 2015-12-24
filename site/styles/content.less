@@ -179,3 +179,25 @@ section#features ul li h4 {
 	padding-left: 10px;
 	padding-right: 10px;
 }
+
+/*Tablet version*/
+
+@media only screen   and (min-device-width: 768px)   and (max-device-width: 1024px) {
+
+header {
+	padding: @vertical_spacing calc(~'(100% - 900px) / 2');
+}
+
+header h1 {
+	font-size: 2em;
+}
+
+header figure {
+	background-position: -200px top;
+}
+
+section#form_wrap form label input {
+	width:calc(180px - 40px);
+}
+
+}
