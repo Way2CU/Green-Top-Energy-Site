@@ -5,11 +5,42 @@
 	<html lang="$language" cms:eval="lang">
 		<head>
 			<title><cms:text constant="site_title"/></title>
+			<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+			<cms:collection include="page_control"/>
 			<cms:module name="head_tag" action="print_tag"/>
 		</head>
 
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
-			<h1>It works!</h1>
+			<header>
+				<img src="_BASEURL.'/site/images/logo.svg'"  alt="logo" cms:eval="src"/>
+
+				<h1><cms:text constant="title_header"/></h1>
+
+				<a
+					href="'tel:'.urlencode(Language::getText('phone'))"
+					cms:eval="href"
+					class="phone"
+					>
+					<cms:text constant="phone"/>
+					<img src="_BASEURL.'/site/images/phone-circle.svg'"  alt="phone" cms:eval="src"/>
+				</a>
+
+				<cms:module
+					name="gallery"
+					action="show_image_list"
+					group="header_slider"
+					template="parts/slider_images.xml"
+					/>
+			</header>
+
+			<section id="form_wrap">
+				<p><cms:text constant="title_form"/></p>
+				<cms:module
+					name="contact_form"
+					action="show"
+					text_id="contact"
+					/>
+			</section>	
 		</body>
 	</html>
 </document>
