@@ -3,10 +3,10 @@ site:
   domain: energyportal.co.il
   subdomain: lp2
   make_alias: false
-  root: httpdocs-lp2
+  root: lp2
   username: "energy_manager"
   caracal_branch: develop
-  ip_address: 74.208.172.190
+  ip_address: 198.251.79.73
   # owner: Some Person
   # plan: Unlimited
   # database_type: 'mysql'
